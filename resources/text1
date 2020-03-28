@@ -1,0 +1,32 @@
+We propose a retinex improvement for nighttime image enhancement. Retinex is often used on images
+under non-uniform illumination in terms of either color or lightness and has satisfactory results to achieve
+color constancy and dynamic range compression. Few studies focus retinex on nighttime images, especially those under extreme conditions (i.e., images with over-lighted or extremely under-lighted areas or
+with noise speckles), on which retinex operation can perform badly. Original multi-scale retinex (MSR)
+is extremely sensitive to noise speckles that cameras produce in low light areas, and it has unsatisfactory
+effect on areas with normal or intensive illumination. Moreover, original MSR uses a gain-offset method
+for prior-to-display treatment and can lead to apparent data loss on nighttime images. This paper replaces
+the logarithm function in MSR with a customized sigmoid function to minimize data loss, and adapts MSR
+to nighttime images by merging results from sigmoid-MSR with original images. Experiments show our
+framework, when applied to nighttime images, can preserve areas with normal or intensive lighting and
+suppress noise speckles in extreme low light areas.Nighttime image enhancement is a particular problem of those
+dealing with images with variant lighting conditions. Retinex, is
+one effective theory aiming at simulating Human Visual System
+(HVS) to achieve color constancy and dynamic range compression. This paper shows that with modifications, retinex can be
+applicable to nighttime images even under extreme conditions. In
+1986, Edwin Land [1] proposed the last version of his retinex theory as a model for human color constancy. Later, several works
+emerged implementing this retinex theory but with huge computational cost and sometimes low performance in some extreme cases.
+What caught our attention is the center/surround retinex, which
+was also brought up by Edwin Land [2] and has the characteristics of easy implementation, fast computation and less parameters.
+Research from NASA [3,4] further improved this c/s retinex leading
+to what is called single-scale retinex (SSR) and multi-scale retinex
+Nighttime image enhancement is a particular problem of those
+dealing with images with variant lighting conditions. Retinex, is
+one effective theory aiming at simulating Human Visual System
+(HVS) to achieve color constancy and dynamic range compression. This paper shows that with modifications, retinex can be
+applicable to nighttime images even under extreme conditions. In
+1986, Edwin Land [1] proposed the last version of his retinex theory as a model for human color constancy. Later, several works
+emerged implementing this retinex theory but with huge computational cost and sometimes low performance in some extreme cases.
+What caught our attention is the center/surround retinex, which
+was also brought up by Edwin Land [2] and has the characteristics of easy implementation, fast computation and less parameters.
+Research from NASA [3,4] further improved this c/s retinex leading
+to what is called single-scale retinex (SSR) and multi-scale retinex
